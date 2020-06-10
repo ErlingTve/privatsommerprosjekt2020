@@ -6,6 +6,9 @@
     <p>In this file I will try out the different features of HTML as I learn them.</p>
 
     <h2>It is possible to make headers of different sizes!</h2>
+    
+    <h2>Links are done like this:</h2>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link that you can click, but don't have to. It's a free country.</a>
 
 </body>
 </html>

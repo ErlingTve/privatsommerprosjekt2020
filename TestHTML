@@ -2,13 +2,29 @@
 <html>
 <body>
     <h1>Hello World!</h1>
-    <h1>Purpose</h1>
+    <h1>Purpose:</h1>
     <p>In this file I will try out the different features of HTML as I learn them.</p>
 
     <h2>It is possible to make headers of different sizes!</h2>
     
     <h2>Links are done like this:</h2>
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link that you can click, but don't have to. It's a free country.</a>
+
+    <h2>Images are done like this:</h2>
+    <img src="https://instagram.fosl3-2.fna.fbcdn.net/v/t51.2885-19/s320x320/89028352_2575687152716889_3064873496896077824_n.jpg?_nc_ht=instagram.fosl3-2.fna.fbcdn.net&_nc_ohc=UreUyWVsXEoAX8EsBco&oh=b909e4335f672d49da16a7c40ac76379&oe=5F090C90" alt="Picture from Instagram" height="300" width="300">
+
+    <h2>Linebreak:</h2>
+    <p>If I only use enter when writing,
+        this happens.
+    </p>
+    <p>By using the "br"-method <br> this happens.</p>
+
+    <h2>Styles:</h2>
+    <p>There are multiple styles that can be used:</p>
+    <p style="color: green;">The text can be in different colors.</p>
+    <p style="font-size: larger;">The text can be in different sizes.</p>
+    <p style="font-family: fantasy;">The font can be different.</p>
+    <p style="background-color: orangered;">The background-color can be different.</p>
 
 </body>
 </html>

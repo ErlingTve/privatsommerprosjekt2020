@@ -1,6 +1,21 @@
 body {
     background-color: cadetblue;
+    /*
+    Here we can also add a background-image like this:
+    background-image: url('*The image*') ;
+
+    To avoid the image to repeat you can use 
+    background-repeat: no-repeat;
+
+    To make the image cover the entire element, you can use
+    background-size: cover;
+
+    To make sure the entire element is always covered, use
+    background-attachment: fixed;
+    */
 }
+
+/* Text (headers and paragraphs) */
 h1 {
     color: crimson;
     border: 2px dotted crimson;
@@ -13,4 +28,23 @@ h2 {
 
 p {
     font-size: larger;
+}
+
+/*Tables*/
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    /*border-spacing: 5px; Space between the borders of the cells. Doesn't make much sense when using border-collapse. */
+}
+
+th, td {
+    padding: 5px; /*Specifies the space between the cell content and its borders.*/
+}
+
+th {
+    /*text-align: left;    This makes the header aligned to the left instead of being centered, as it is by default. */
 }

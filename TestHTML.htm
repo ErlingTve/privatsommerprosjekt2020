@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html> 
     <head>
+        <title>Test page</title>
         <link rel="stylesheet" href="styles.css">
+        <meta name="author" content="Erling Tveter">
+        <meta name="description" content="File testing different features of the HTML language">
+        <!-- Make the zoom and width of the webpage nice for all devices: -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
 <body>
     <h1>Hello World!</h1>
@@ -40,6 +45,13 @@
     </a>
     <p>Lastly, we can have buttons containing links:</p>
     <button onclick="document.location = 'https://www.youtube.com/watch?v=Jk71bPz5VLo'">Entertain me!</button>
+
+    <h2>Iframes:</h2>
+    <p>Iframes are used to display a webpage witin a webpage. <br></p>
+    <iframe src="https://www.w3schools.com/html/html_iframe.asp" style="height: 200px; width: 400px;"></iframe>
+    <p>Iframes can also be used as target for a link. To do this you name the iframe using name="*name*", and refer to the name as the target for the link.</p>
+
+    <hr>
 
     <h2>Styles:</h2>
     <p>There are multiple styles that can be used:</p>
@@ -92,14 +104,126 @@
     <h2>Bi-directional Override:</h2>
     <bdo dir="rtl"> We can write text from right to left.</bdo>
 
+    <hr>
+
+    <h2>Table:</h2>
+    <table><!--Could define the width of the table, for instance 100%-->
+        <caption>Table</caption>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Age</th>
+            <th colspan="2">Telephone number</th> <!--Can also have rowspan, one cell spanning multiple rows-->
+        </tr>
+        <tr>
+            <td>Erling</td>
+            <td>Tveter</td>
+            <td>23</td>
+            <td>+47 93 02 66 56</td>
+            <td>+47 66 77 77 68</td>
+        </tr>
+    </table>
+
+    <p>To add a style to a specific table, first give the table an id, and then use that to choose the style in your css-document.<br>
+    You can read more about how it is done <a href="https://www.w3schools.com/html/html_tables.asp">here</a>.</p>
+
+    <h2>Unordered list:</h2>
+    <p>Inside the ul, you can decide what shape the points should have by using style="list-style-type:square/disc/circle/none".
+        By default the shape is disc, which is what you see here.
+    </p>
+    <ul>
+        <li>Cross-country skiing</li>
+            <ul>
+                <li>Classical</li>
+                <li>Skating</li>
+            </ul>
+        <li>Athletics</li>
+        <li>Volleyball</li>
+    </ul>
+    <p>To create a horizontal list, a navigation menu, check out 
+        <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu">this example</a>.
+        The key is to use the CSS-property float: left on the list items.
+    </p>
+
+    <h2>Ordered list:</h2>
+    <p>
+        Inside the ol you can decide whether the list should be ordered using numbers, letters or roman numbers. <br>
+        In the case of letters and roman numbers you can also choose whether they should be upper- or lowercase. <br>
+        All of this is done using type="1(default)/A/a/I/i".
+    </p>
+    <ol>
+        <li>Marit Bjørgen</li>
+        <li>Ole Einar Bjørndalen</li>
+        <li>Bjørn Dæhlie</li>
+    </ol>
+    <p>It is also possible to start the list at another number than 1 by using start="*The number*"</p>
+
+    <h2>Description list:</h2>
+    <dl>
+        <dt>Petter Northug</dt>
+        <dd>- skier</dd>
+        <dt>Jakob Ingebrigtsen</dt>
+        <dd>- runner</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Block-level element:</h2>
+    <div style="background-color: bisque;">
+        <p>A block-level element starts on a new line and takes up all the width available. <br>
+        Use the div-element as a container for other elements to make them block-level.</p>
+    </div>
+
+    <h2>Inline elements:</h2>
+    <p>
+        Inline elements do not start a new line, and only uses the width necessary. You can use the 
+        <span style="color: rgb(255, 196, 0);">span</span>-element to make for instance text-elements inline.
+    </p>
+
+    <hr>
+
+    <h2>Classes:</h2>
+    <p>
+        You can define an element's class using class="*The class*" and then set a style for every element in that class in your css-document. <br>
+        In the css-file the class is referred to using .*class name*, or in the case of an inline class, span.*class name*. <br>
+        Note that the class name is case sensitive.
+        It is also possible to have a single element be a part of several classes.
+    </p>
+
+    <h2>IDs:</h2>
+    <p>
+        The id attribute has to  be unique within the HTML-file, and can be referred to in the CSS-file using #*The ID*.
+        The id is case sensitive and <b>cannot</b> contain any white space. <br>
+        Note the difference between class and id: An id only refers to a single element, wheras a class may refer to multiple elements.
+    </p>
+
+    <hr>
+
+    <h2>Layout:</h2>
+    <p>When it comes to layout, it seems we have to trust in our future selves, learning CSS. It seems like the easiest is to use 
+        a CSS Framework, but CSS Flexbox may be the most versitile.
+    </p>
+
+    <h2>Responsive Web Design:</h2>
+    <h3>Setting the Viewport:</h3>
+    <p>The viewport sets the page's scaling and dimensions. Use the meta I have used in this document.</p>
+    <h3>Responsive Images:</h3>
+    <p>
+        Often nice to use max-width:100%, which will make the image scale down if it has to, but never exceed its original size. 
+        The height can be set to auto. <br>
+        By using the picture- and source-elements, it is possible to show different images for different browser window sizes.
+    </p>
+    <h3>Responsive Text:</h3>
+    <p style="font-size: 5vw;">
+        By using the vw-unit, the text size will follow the size of the browser window.
+    </p>
 
 
     <!-- No additional information below this comment! -->
     <hr>
-    <h2>Address:</h2>
     <address id="Addr">
+        <img src="Letter.jpeg" alt="Letter" style="float: left; height: 75px; width: 75px;">
         Made by Erling Tveter. <br>
-        Contact me through: <br>
         Email: erling.tveter@gmail.com<br>
         Telephone: +47 93 02 66 56
     </address>

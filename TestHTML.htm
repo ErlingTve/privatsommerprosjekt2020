@@ -101,8 +101,38 @@
         This is especially useful for poems, song lyrics, etc.
     </pre>
 
+    <h2>Code:</h2>
+    <p>Use code-element to display code in your document.</p>
+    <code>
+        x = 1;<br>
+        y = 2;<br>
+        z = x + y;<br>
+    </code>
+    <p>Tips: If you don't want to write br for every line, you can have the code-element within a pre-element.<br>
+    For <i>variables</i> (in mathematics or programming) use var-element.</p>
+
     <h2>Bi-directional Override:</h2>
     <bdo dir="rtl"> We can write text from right to left.</bdo>
+
+    <h2>Entities:</h2>
+    <p>
+        Some characters are reserved in HTML. To display them, write <code>&entityName</code>. <br>
+        It is also possible to use entity numbers, <code>&#entityNumber</code>, which are harder to remember, but are supported
+        almost everywhere.<br>
+        The entity name of &lt; is lt, and &gt; is gt. <br>
+        Another common entity is &amp;nbsp, non-breaking space, which ensures that there wil be no linebreak at that space.
+    </p>
+    <h3>Symbol Entities:</h3>
+    <p>There are many symbols not usually found on a keyboard that can be added to an HTML-page. Here are some examples: </p>
+    <h4>Mathematical Symbols:</h4>
+    <p>&forall;, &part;, &exist;, &empty;, &nabla;, &isin;, &notin;, &prod; and &sum;.</p>
+    <h4>Emojis:</h4>
+    <p>Emojis are also a part of the UTF-8 alphabet, and can be accessed through their entity number &#128513; <br>
+    For full list of emojis and their entity numbers, check out <a href="https://www.w3schools.com/charsets/ref_emoji.asp">
+    this link</a>. <br>
+    Remember that emojis, like any other characters, can be sized using style="font-size:*size*".</p>
+    <h4>Other Symbols:</h4>
+    <p>&copy;, &reg;, &euro;, &larr;, &spades;, etc. There are also a lot more, including the greek letters and currency symbols.</p>
 
     <hr>
 
@@ -214,9 +244,45 @@
         By using the picture- and source-elements, it is possible to show different images for different browser window sizes.
     </p>
     <h3>Responsive Text:</h3>
-    <p style="font-size: 5vw;">
+    <p style="font-size: 2vw;">
         By using the vw-unit, the text size will follow the size of the browser window.
     </p>
+    <h3>Media Queries:</h3>
+    <p>
+        Can change the layout based on the size of the browser window. For instance make elements display horizontally on large 
+        screens and vertically on smaller screens. <br>
+        First define how it should look on large screens, and then use <br>
+        <code>@media screen and (max-width: *number*px)</code> <br>
+        to define how it should look when the browser window is less than *number* pixels wide.
+    </p>
+
+    <h2>Semantic Elements:</h2>
+    <p>A semantic element clearly describes its meaning to both the browser and the developer, unlike for instance div and span.</p>
+    <dl>
+        <dt>Section</dt>
+            <dd>- defines a section in the document.</dd>
+        <dt>Article</dt>
+            <dd>- specifies independent, self-contained content.</dd>
+            <dd>- should make sense on its own. Can be read independently of the rest of the webpage.</dd>
+        <dt>Header</dt>
+            <dd>- specifies a header for a document or section.</dd>
+            <dd>- should be used as a container for introductory content.</dd>
+        <dt>Footer</dt>
+            <dd>- specifies a footer for a document or section.</dd>
+            <dd>- should contain information about its containing element.</dd>
+            <dd>- typically contains the author of the document, copyright information, links to terms of use, contact information, etc.</dd>
+        <dt>Nav</dt>
+            <dd>- defines a set of navigation links.</dd>
+            <dd>- not all links should be in nav, only the major ones.</dd>
+        <dt>Aside</dt>
+            <dd>- defines some content aside from the content it is placed in (like a sidebar).</dd>
+            <dd>- should be related to the surrounding content.</dd>
+        <dt>Figure</dt>
+            <dd>- should group together image and figcaption.</dd>
+    </dl>
+    <p>There are also several other semantic elements, like time.</p>
+
+
 
 
     <!-- No additional information below this comment! -->

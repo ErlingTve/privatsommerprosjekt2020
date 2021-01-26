@@ -20,7 +20,7 @@ h1 {
     color: crimson;
     border: 2px dotted crimson;
     padding: 30px;
-    margin: 50px;
+    /*margin: 50px;*/
 }        
 h2 {
     color: blue;

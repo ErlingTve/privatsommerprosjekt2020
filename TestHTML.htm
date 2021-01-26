@@ -282,7 +282,43 @@
     </dl>
     <p>There are also several other semantic elements, like time.</p>
 
+    <hr>
 
+    <h1>CSS</h1>
+    <p>We will now have a closer look at some CSS-properties that we have not already covered.</p>
+
+    <h2>Transparency:</h2>
+    <p>
+        When using rgba or hsla for color, you can add a fourth number which defines how transperent the color should be.
+        1 is normal and 0 is completely transperent. <br>
+        If you are using a name for a color instead of an rgb/hex/hsl, then you can use the <code>opacity</code>-element to
+        specify the transparency of the color. <br>
+        NB! If you use the opacity property on a background element, the text within that element will inherit the same
+        transparency making it hard to read. Using rgba or hsla prevents this inheritance.
+    </p>
+    <h2>Background-image:</h2>
+    <p>Just like you can set a background-color, you can also set a Background-image. By default the image is repeated so 
+        it covers the entire element. <br>
+        To only repeat an image horizontally, use <code>background-repeat: repeat-x</code>. To only repeat vertically, 
+        use <code>background-repeat: repeat-y</code>. <br>
+        If you don't want the image to repeat, use <code>background-repeat: no-repeat</code>. <br>
+        By using <code>background-position: *location*</code> you can place the image where you want. <br>
+        Use <code>background-attachment: fixed</code> to fixate the background-image such that it stays the same place on the
+        screen even when scrolling. Use <code>background-attachment: scroll</code> to make the image scroll like the rest of
+        the page.
+    </p>
+
+    <h2>Borders:</h2>
+    <p>
+        First, you have to decide the style of the border, by using the border-style property. There are a number of different 
+        opportunities, including dotted, dashed, solid, double, groove, ridge, etc. It is also possible to use a mix. Check out
+        this <a href="https://www.w3schools.com/css/css_border.asp">link</a> to see all the different styles. <br>
+        Border width can be chosen using the <code>border-witdh</code> property, and it is also possible to choose different widths
+        for the different parts of the border. Same with the border color. <br>
+        Instead of writing a line with different styles, colors, and/or widths in order to get the mixed border you want, you can 
+        write explicitly how each side should look by using <code>border-top-style</code> for instance. <br>
+        For rounded corners on your border, use <code>border-radius: *number*px</code>.
+    </p>
 
 
     <!-- No additional information below this comment! -->
